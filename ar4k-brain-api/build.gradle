@@ -26,6 +26,7 @@ version = rootProject.version
 ext {
   sourceCompatibility = 1.8
   packageName = 'ar4k-brain-api'
+  ossrhPassword = System.getenv('OSSRH_PASSWORD')
 }
 
 repositories {
@@ -96,7 +97,7 @@ publishing {
       name = "sonatype"
       credentials {
         username "rossonet"
-        password "${rootProject.ext.ossrhPassword}"
+        password "${ossrhPassword}"
       }
     }
   }

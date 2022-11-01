@@ -13,4 +13,5 @@ pluginManagement {
 }
 rootProject.name = 'ar4k-brain'
 include 'ar4k-brain-api'
+include 'ar4k-brainctl'
 
