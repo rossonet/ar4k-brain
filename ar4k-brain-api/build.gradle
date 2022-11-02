@@ -18,15 +18,16 @@ apply plugin: 'base'
 apply plugin: 'signing'
 apply plugin: 'maven-publish'
 apply plugin: 'java-library'
+apply plugin: 'distribution'
 
-description = "configuration objects of ar4k-brain"
-group = 'org.ar4k.agent'
+
+description = "default objects and consfigurations for ar4k brain"
+group = rootProject.group
 version = rootProject.version
 
 ext {
   sourceCompatibility = 1.8
   packageName = 'ar4k-brain-api'
-  ossrhPassword = System.getenv('OSSRH_PASSWORD')
 }
 
 repositories {
@@ -47,6 +48,10 @@ eclipse {
     downloadSources = true
   }
 }
+
+task eclipseClosedDependencies {}
+
+task eclipseClosedDependencies_ {}
 
 java {
   withJavadocJar()
@@ -97,7 +102,7 @@ publishing {
       name = "sonatype"
       credentials {
         username "rossonet"
-        password "${ossrhPassword}"
+        password "${rootProject.ext.ossrhPassword}"
       }
     }
   }

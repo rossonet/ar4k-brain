@@ -13,16 +13,15 @@ buildscript {
   }
 }
 
-description = "AI component for Ar4k"
-group = 'org.ar4k.agent'
-version = '0.0.5'
+description = rootProject.description
+group = rootProject.group
+version = rootProject.version
 
 ext {
 	sourceCompatibility = 1.8
 	ar4kVersion = '0.9.1014'
 	debianName = "${project.name}"
 	packageName = "${project.name}"
-	ossrhPassword = System.getenv('OSSRH_PASSWORD')
 }
 
 repositories {
@@ -60,7 +59,7 @@ dependencies {
   // https://zeppelin.apache.org/docs/0.10.1/usage/rest_api/
   api group: 'org.apache.zeppelin', name: 'zeppelin-client', version: '0.10.1'
   
-  api project(':ar4k-brain-api')
+  implementation project(":ar4k-brain-api")
   testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
   testImplementation group: 'com.ginsberg', name: 'junit5-system-exit', version: '1.1.2'
   testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
@@ -229,7 +228,7 @@ publishing {
       name = "sonatype"
       credentials {
         username "rossonet"
-        password "${ossrhPassword}"
+        password "${rootProject.ext.ossrhPassword}"
       }
     }
   }
