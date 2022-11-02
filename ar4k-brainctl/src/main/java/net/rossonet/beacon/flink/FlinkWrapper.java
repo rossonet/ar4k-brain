@@ -1,8 +1,6 @@
 package net.rossonet.beacon.flink;
 
-import net.rossonet.beacon.BeaconWrapper;
-
-public interface FlinkWrapper extends BeaconWrapper {
+public interface FlinkWrapper extends AutoCloseable {
 
 	void startFlink();
 
