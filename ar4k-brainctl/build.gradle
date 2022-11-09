@@ -48,7 +48,7 @@ dependencies {
   api group: 'org.yaml', name: 'snakeyaml', version: '1.30'
   api 'io.lettuce:lettuce-core:6.1.8.RELEASE'
   api 'org.jeasy:easy-rules:4.1.0'
-  api 'org.deeplearning4j:deeplearning4j-core:1.0.0-M2'
+  api 'org.deeplearning4j:deeplearning4j-core:1.0.0-M2.1'
   api 'org.deeplearning4j:deeplearning4j-zoo:1.0.0-M2'
   api 'org.deeplearning4j:deeplearning4j-nlp:1.0.0-M2'
   // Flink Client https://flink.apache.org/
