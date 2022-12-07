@@ -46,7 +46,7 @@ apply plugin: 'maven-publish'
 dependencies {
   api group: 'org.json', name: 'json', version: '20220924'
   api group: 'org.yaml', name: 'snakeyaml', version: '1.30'
-  api 'io.lettuce:lettuce-core:6.1.8.RELEASE'
+  api 'io.lettuce:lettuce-core:6.2.2.RELEASE'
   api 'org.jeasy:easy-rules:4.1.0'
   api 'org.deeplearning4j:deeplearning4j-core:1.0.0-M2'
   api 'org.deeplearning4j:deeplearning4j-zoo:1.0.0-M2'
