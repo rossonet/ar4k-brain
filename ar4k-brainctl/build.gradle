@@ -54,7 +54,7 @@ dependencies {
   // Flink Client https://flink.apache.org/
   api group: 'org.apache.flink', name: 'flink-java', version: '1.15.2'
   api group: 'org.apache.flink', name: 'flink-streaming-java', version: '1.15.2'
-  api group: 'org.apache.flink', name: 'flink-clients', version: '1.15.2'
+  api group: 'org.apache.flink', name: 'flink-clients', version: '1.16.1'
   // Zeppelin Client https://zeppelin.apache.org/docs/0.10.1/usage/zeppelin_sdk/client_api.html
   // https://zeppelin.apache.org/docs/0.10.1/usage/rest_api/
   api group: 'org.apache.zeppelin', name: 'zeppelin-client', version: '0.10.1'
