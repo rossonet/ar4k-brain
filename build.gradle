@@ -1,6 +1,6 @@
 description = "java commons library for rules engine workload"
 group = 'net.rossonet.brain'
-version = '0.1.0'
+version = '0.1.1'
 
 ext {
 	sourceCompatibility = 1.8
