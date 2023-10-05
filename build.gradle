@@ -1,4 +1,4 @@
-description = "java commons library for ai tasks"
+description = "java commons library for rules engine workload"
 group = 'net.rossonet.brain'
 version = '0.1.0'
 
